@@ -1,0 +1,12 @@
+---
+# playbook file for bw vyos
+ - name: "playing vyos playbook"
+   become: true
+   hosts: all
+   gather_facts: no
+   roles:
+    - anoop.vyos
+   vars:
+     vyos_cmd: interface
+     vyos_interface: eth1
+     vyos_interface_description: "internet network"
