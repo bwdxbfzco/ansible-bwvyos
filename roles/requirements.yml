@@ -1,7 +1,5 @@
 ---
-roles:
-  # install vyos role from Github
-  - src: https://github.com/bwdxbfzco/anoop.vyos
-    version: master
-    scm: git
-    name: anoop.vyos
+# install vyos role from Github
+- name: anoop.vyos
+  src: https://github.com/bwdxbfzco/anoop.vyos
+  version: master
